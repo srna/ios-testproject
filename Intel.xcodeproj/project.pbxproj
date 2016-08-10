@@ -62,8 +62,8 @@
 			children = (
 				C38729F31D5A4FDC00D1E1CD /* Models */,
 				C38729F61D5A509D00D1E1CD /* Services */,
-				C38729F41D5A4FF200D1E1CD /* ViewControllers */,
 				C38729F51D5A501000D1E1CD /* UserInterface */,
+				C38729F41D5A4FF200D1E1CD /* ViewControllers */,
 				C38729DF1D5A45F000D1E1CD /* AppDelegate.swift */,
 				C38729EB1D5A45F000D1E1CD /* Info.plist */,
 			);
@@ -75,26 +75,26 @@
 			children = (
 				C38729F71D5A521300D1E1CD /* Book.swift */,
 			);
-			name = Models;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		C38729F41D5A4FF200D1E1CD /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				C38729F11D5A4EAC00D1E1CD /* SearchTVC.swift */,
 				C38729FD1D5AFF0900D1E1CD /* ResultsTVC.swift */,
+				C38729F11D5A4EAC00D1E1CD /* SearchTVC.swift */,
 			);
-			name = ViewControllers;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		C38729F51D5A501000D1E1CD /* UserInterface */ = {
 			isa = PBXGroup;
 			children = (
-				C38729E31D5A45F000D1E1CD /* Main.storyboard */,
 				C38729E61D5A45F000D1E1CD /* Assets.xcassets */,
 				C38729E81D5A45F000D1E1CD /* LaunchScreen.storyboard */,
+				C38729E31D5A45F000D1E1CD /* Main.storyboard */,
 			);
-			name = UserInterface;
+			path = UserInterface;
 			sourceTree = "<group>";
 		};
 		C38729F61D5A509D00D1E1CD /* Services */ = {
@@ -102,7 +102,7 @@
 			children = (
 				C38729F91D5A523E00D1E1CD /* BookService.swift */,
 			);
-			name = Services;
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +193,7 @@
 				C38729E41D5A45F000D1E1CD /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		C38729E81D5A45F000D1E1CD /* LaunchScreen.storyboard */ = {
@@ -201,6 +202,7 @@
 				C38729E91D5A45F000D1E1CD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -332,6 +334,7 @@
 				C38729F01D5A45F000D1E1CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
