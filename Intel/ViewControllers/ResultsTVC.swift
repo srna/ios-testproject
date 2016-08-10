@@ -10,7 +10,11 @@ import UIKit
 
 class ResultsTVC: UITableViewController {
     
-    var books: [Book]!
+    var books: [Book]! {
+        didSet {
+            books.sortInPlace { $0.pageCount < $1.pageCount }
+        }
+    }
 
     // MARK: - Table view data source
 
