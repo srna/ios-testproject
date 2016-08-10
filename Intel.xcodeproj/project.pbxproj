@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		C38729E01D5A45F000D1E1CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38729DF1D5A45F000D1E1CD /* AppDelegate.swift */; };
-		C38729E21D5A45F000D1E1CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38729E11D5A45F000D1E1CD /* ViewController.swift */; };
 		C38729E51D5A45F000D1E1CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C38729E31D5A45F000D1E1CD /* Main.storyboard */; };
 		C38729E71D5A45F000D1E1CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C38729E61D5A45F000D1E1CD /* Assets.xcassets */; };
 		C38729EA1D5A45F000D1E1CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C38729E81D5A45F000D1E1CD /* LaunchScreen.storyboard */; };
+		C38729F21D5A4EAC00D1E1CD /* SearchTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38729F11D5A4EAC00D1E1CD /* SearchTVC.swift */; };
+		C38729F81D5A521300D1E1CD /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38729F71D5A521300D1E1CD /* Book.swift */; };
+		C38729FA1D5A523E00D1E1CD /* BookService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38729F91D5A523E00D1E1CD /* BookService.swift */; };
+		C38729FE1D5AFF0900D1E1CD /* ResultsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38729FD1D5AFF0900D1E1CD /* ResultsTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C38729DC1D5A45EF00D1E1CD /* Intel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Intel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C38729DF1D5A45F000D1E1CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C38729E11D5A45F000D1E1CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C38729E41D5A45F000D1E1CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C38729E61D5A45F000D1E1CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C38729E91D5A45F000D1E1CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C38729EB1D5A45F000D1E1CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C38729F11D5A4EAC00D1E1CD /* SearchTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTVC.swift; sourceTree = "<group>"; };
+		C38729F71D5A521300D1E1CD /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		C38729F91D5A523E00D1E1CD /* BookService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookService.swift; sourceTree = "<group>"; };
+		C38729FD1D5AFF0900D1E1CD /* ResultsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,49 @@
 		C38729DE1D5A45EF00D1E1CD /* Intel */ = {
 			isa = PBXGroup;
 			children = (
+				C38729F31D5A4FDC00D1E1CD /* Models */,
+				C38729F61D5A509D00D1E1CD /* Services */,
+				C38729F41D5A4FF200D1E1CD /* ViewControllers */,
+				C38729F51D5A501000D1E1CD /* UserInterface */,
 				C38729DF1D5A45F000D1E1CD /* AppDelegate.swift */,
-				C38729E11D5A45F000D1E1CD /* ViewController.swift */,
-				C38729E31D5A45F000D1E1CD /* Main.storyboard */,
-				C38729E61D5A45F000D1E1CD /* Assets.xcassets */,
-				C38729E81D5A45F000D1E1CD /* LaunchScreen.storyboard */,
 				C38729EB1D5A45F000D1E1CD /* Info.plist */,
 			);
 			path = Intel;
+			sourceTree = "<group>";
+		};
+		C38729F31D5A4FDC00D1E1CD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C38729F71D5A521300D1E1CD /* Book.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		C38729F41D5A4FF200D1E1CD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C38729F11D5A4EAC00D1E1CD /* SearchTVC.swift */,
+				C38729FD1D5AFF0900D1E1CD /* ResultsTVC.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C38729F51D5A501000D1E1CD /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				C38729E31D5A45F000D1E1CD /* Main.storyboard */,
+				C38729E61D5A45F000D1E1CD /* Assets.xcassets */,
+				C38729E81D5A45F000D1E1CD /* LaunchScreen.storyboard */,
+			);
+			name = UserInterface;
+			sourceTree = "<group>";
+		};
+		C38729F61D5A509D00D1E1CD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C38729F91D5A523E00D1E1CD /* BookService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C38729E21D5A45F000D1E1CD /* ViewController.swift in Sources */,
+				C38729FA1D5A523E00D1E1CD /* BookService.swift in Sources */,
 				C38729E01D5A45F000D1E1CD /* AppDelegate.swift in Sources */,
+				C38729F21D5A4EAC00D1E1CD /* SearchTVC.swift in Sources */,
+				C38729F81D5A521300D1E1CD /* Book.swift in Sources */,
+				C38729FE1D5AFF0900D1E1CD /* ResultsTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
